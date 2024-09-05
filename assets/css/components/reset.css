@@ -15,6 +15,9 @@ body{
   margin: 0;
   padding: 0;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 var(--margin-inline-2) 0;
+}
 .clearfix::after{
     display: block;
     clear: both;
@@ -53,8 +56,17 @@ body{
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-inline: var(--margin-inline-3);
+    margin-inline: var(--margin-inline-offset-3);
 }
 .row > [class*="width-"]{
     padding-inline:var(--padding-inline-3)
+}
+.py-1{
+    padding-block: var(--padding-inline-1);
+}
+.py-2{
+    padding-block: var(--padding-inline-2);
+}
+.py-3{
+    padding-block: var(--padding-inline-3);
 }
