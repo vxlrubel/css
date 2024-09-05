@@ -16,9 +16,15 @@
     --padding-inline-1: .5rem;
     --padding-inline-2: 1rem;
     --padding-inline-3: 1.5rem;
-    --margin-inline-1: -.5rem;
-    --margin-inline-2: -1rem;
-    --margin-inline-3: -1.5rem;
+    --padding-inline-offset-1: -.5rem;
+    --padding-inline-offset-2: -1rem;
+    --padding-inline-offset-3: -1.5rem;
+    --margin-inline-1: .5rem;
+    --margin-inline-2: 1rem;
+    --margin-inline-3: 1.5rem;
+    --margin-inline-offset-1: -.5rem;
+    --margin-inline-offset-2: -1rem;
+    --margin-inline-offset-3: -1.5rem;
     --gap-1: .5rem;
     --gap-2: 1rem;
     --gap-3: 1.5rem;
