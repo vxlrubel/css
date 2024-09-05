@@ -1,0 +1,25 @@
+:root{
+    --white: #FFFFFF;
+    --dark: rgba(0,0,0,.87);
+    --theme: #FF3EA5;
+    --font-small: .8rem;
+    --font-normal: 1rem;
+    --font-weight-thin: 100;
+    --font-weight-lighter: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+    --font-weight-bolder: 700;
+    --font-weight-large: 800;
+    --font-weight-extra-large: 900;
+    --padding-inline-1: .5rem;
+    --padding-inline-2: 1rem;
+    --padding-inline-3: 1.5rem;
+    --margin-inline-1: -.5rem;
+    --margin-inline-2: -1rem;
+    --margin-inline-3: -1.5rem;
+    --gap-1: .5rem;
+    --gap-2: 1rem;
+    --gap-3: 1.5rem;
+}
