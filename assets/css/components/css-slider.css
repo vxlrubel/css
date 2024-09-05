@@ -1,0 +1,57 @@
+.css-image-slider{
+    --item-height: 12.5rem;
+    position: relative;
+    height: var(--item-height);
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+    );
+}
+
+.css-image-slider [class*="items-"]{
+    --total-item: 8;
+    --item-width: 18.75rem;
+    --item-height: 12.5rem;
+    position: absolute;
+    width: var(--item-width);
+    height: var(--item-height);
+    border-radius: 1.5rem;
+    background: var(--theme);
+    left: max(calc(var(--item-width) * var(--total-item)), 100%);
+    animation-name: scroll-left;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc(30s / var(--total-item) * (var(--total-item) - var(--slide-items)) * -1);
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+.css-image-slider [class*="items-"]:nth-child(odd){
+    background: blue;
+}
+
+.css-image-slider:hover [class*="items-"]{
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    to{
+        left: -18.75rem;
+    }
+}
+.css-image-slider .slider-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
